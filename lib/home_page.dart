@@ -1,10 +1,22 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
   final List<String> filters = const ['All', 'Nike', 'Adidas', 'Prada'];
+  late String selectedFilter;
+
+  @override
+  void initState() {
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -39,10 +51,29 @@ class HomePage extends StatelessWidget {
           SizedBox(
             height: 120,
             child: ListView.builder(
+                scrollDirection: Axis.horizontal,
                 itemCount: filters.length,
                 itemBuilder: (context, index) {
                   final filter = filters[index];
-                  Chip(label: Text(filter));
+                  //selectedFilter = filter;
+                  return Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 4.0),
+                    child: GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          selectedFilter = filter;
+                        });
+                      },
+                      child: Chip(
+                        label: Text(filter),
+                        backgroundColor: selectedFilter == filter
+                            ? Theme.of(context).colorScheme.primary
+                            : Colors.grey.shade300,
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 20, vertical: 10),
+                      ),
+                    ),
+                  );
                 }),
           )
         ],

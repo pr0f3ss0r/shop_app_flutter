@@ -1,6 +1,8 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:shop_app/product_card.dart';
+import 'package:shop_app/product_list.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -12,10 +14,12 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   final List<String> filters = const ['All', 'Nike', 'Adidas', 'Prada'];
   late String selectedFilter;
+  late String product;
 
   @override
   void initState() {
     super.initState();
+    selectedFilter = filters[0];
   }
 
   @override
@@ -49,7 +53,7 @@ class _HomePageState extends State<HomePage> {
             ],
           ),
           SizedBox(
-            height: 120,
+            height: 100,
             child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemCount: filters.length,
@@ -69,12 +73,27 @@ class _HomePageState extends State<HomePage> {
                         backgroundColor: selectedFilter == filter
                             ? Theme.of(context).colorScheme.primary
                             : Colors.grey.shade300,
+                        labelStyle: selectedFilter == filter
+                            ? const TextStyle(color: Colors.white, fontSize: 18)
+                            : null,
                         padding: const EdgeInsets.symmetric(
                             horizontal: 20, vertical: 10),
                       ),
                     ),
                   );
                 }),
+          ),
+          Expanded(
+            child: ListView.builder(
+              itemCount: products.length,
+              itemBuilder: (context, index) {
+                final product = products[index];
+                return ProductCard(
+                    title: product['title'] as String,
+                    price: double.parse(product['price'].toString()),
+                    imageUrl: product['thumbnail'] as String);
+              },
+            ),
           )
         ],
       )),

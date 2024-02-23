@@ -16,7 +16,8 @@ class MyApp extends StatelessWidget {
       title: 'Shopping App',
       theme: ThemeData(
         textTheme: GoogleFonts.lunasimaTextTheme(),
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme:
+            ColorScheme.fromSeed(seedColor: const Color.fromARGB(184, 149, 255, 0)),
         inputDecorationTheme: const InputDecorationTheme(
           hintStyle: TextStyle(
             fontWeight: FontWeight.w900,

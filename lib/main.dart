@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:shop_app/home_page.dart';
 
+
 void main() {
   runApp(const MyApp());
 }
@@ -15,9 +16,16 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Shopping App',
       theme: ThemeData(
-        textTheme: GoogleFonts.lunasimaTextTheme(),
-        colorScheme:
-            ColorScheme.fromSeed(seedColor: const Color.fromARGB(184, 149, 255, 0)),
+        textTheme: GoogleFonts.lunasimaTextTheme(const TextTheme(
+            displayLarge:
+                TextStyle(fontSize: 30, fontWeight: FontWeight.w700))),
+        appBarTheme: const AppBarTheme(
+            toolbarTextStyle: TextStyle(
+          fontSize: 20,
+          color: Colors.black,
+        )),
+        colorScheme: ColorScheme.fromSeed(
+            seedColor: const Color.fromARGB(184, 149, 255, 0)),
         inputDecorationTheme: const InputDecorationTheme(
           hintStyle: TextStyle(
             fontWeight: FontWeight.w900,
@@ -26,6 +34,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: const HomePage(),
+      
     );
   }
 }

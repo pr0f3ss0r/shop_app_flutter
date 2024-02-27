@@ -6,7 +6,8 @@ final products = [
     "price": 549.0,
     "brand": "Apple",
     "category": "smartphones",
-    "thumbnail": "https://i.dummyjson.com/data/products/1/1.jpg",
+    "thumbnail":
+        "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/14/7403602/1.jpg?8042",
     "images": [
       "https://i.dummyjson.com/data/products/1/1.jpg",
       "https://i.dummyjson.com/data/products/1/2.jpg",
@@ -26,7 +27,8 @@ final products = [
     "stock": 34,
     "brand": "Apple",
     "category": "smartphones",
-    "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+    "thumbnail":
+        "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/14/7403602/1.jpg?8042",
     "images": [
       "https://i.dummyjson.com/data/products/2/1.jpg",
       "https://i.dummyjson.com/data/products/2/2.jpg",
@@ -42,7 +44,8 @@ final products = [
     "price": 1249.0,
     "brand": "Samsung",
     "category": "smartphones",
-    "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
+    "thumbnail":
+        "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/14/7403602/1.jpg?8042",
     "images": ["https://i.dummyjson.com/data/products/3/1.jpg"]
   },
   {
@@ -52,7 +55,8 @@ final products = [
     "price": 280.0,
     "brand": "OPPO",
     "category": "smartphones",
-    "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+    "thumbnail":
+        "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/14/7403602/1.jpg?8042",
     "images": [
       "https://i.dummyjson.com/data/products/4/1.jpg",
       "https://i.dummyjson.com/data/products/4/2.jpg",
@@ -69,7 +73,8 @@ final products = [
     "price": 499.0,
     "brand": "Huawei",
     "category": "smartphones",
-    "thumbnail": "https://i.dummyjson.com/data/products/5/thumbnail.jpg",
+    "thumbnail":
+        "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/14/7403602/1.jpg?8042",
     "images": [
       "https://i.dummyjson.com/data/products/5/1.jpg",
       "https://i.dummyjson.com/data/products/5/2.jpg",
@@ -84,7 +89,8 @@ final products = [
     "price": 1749.0,
     "brand": "Apple",
     "category": "laptops",
-    "thumbnail": "https://i.dummyjson.com/data/products/6/thumbnail.png",
+    "thumbnail":
+        "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/14/7403602/1.jpg?8042",
     "images": [
       "https://i.dummyjson.com/data/products/6/1.png",
       "https://i.dummyjson.com/data/products/6/2.jpg",
@@ -100,7 +106,8 @@ final products = [
     "price": 1499.0,
     "brand": "Samsung",
     "category": "laptops",
-    "thumbnail": "https://i.dummyjson.com/data/products/7/thumbnail.jpg",
+    "thumbnail":
+        "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/14/7403602/1.jpg?8042",
     "images": [
       "https://i.dummyjson.com/data/products/7/1.jpg",
       "https://i.dummyjson.com/data/products/7/2.jpg",
@@ -116,7 +123,8 @@ final products = [
     "price": 1499.0,
     "brand": "Microsoft Surface",
     "category": "laptops",
-    "thumbnail": "https://i.dummyjson.com/data/products/8/thumbnail.jpg",
+    "thumbnail":
+        "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/14/7403602/1.jpg?8042",
     "images": [
       "https://i.dummyjson.com/data/products/8/1.jpg",
       "https://i.dummyjson.com/data/products/8/2.jpg",

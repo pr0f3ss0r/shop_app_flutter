@@ -24,8 +24,20 @@ class CartPage extends StatelessWidget {
                   cartItem['title'].toString(),
                   style: Theme.of(context).textTheme.displayMedium,
                 ),
-                subtitle: Text(
-                    'Size: ${cartItem['size']}Price: ${cartItem['price']}'),
+                subtitle: Row(
+                  children: [
+                    const Text(
+                      'Size:',
+                      style: TextStyle(fontWeight: FontWeight.w900),
+                    ),
+                    Text('${cartItem['size']}   '),
+                    const Text(
+                      'Price: ',
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    Text('\$${cartItem['price']}'),
+                  ],
+                ),
                 trailing: IconButton(
                     color: Colors.red,
                     onPressed: () {},

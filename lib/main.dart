@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
-      create: (context) => CartProvider() ,
+      create: (context) => CartProvider(),
       child: MaterialApp(
         title: 'Shopping App',
         theme: ThemeData(
@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
               displayLarge:
                   TextStyle(fontSize: 30, fontWeight: FontWeight.w700),
               displayMedium:
-                  TextStyle(fontSize: 15, fontWeight: FontWeight.bold))),
+                  TextStyle(fontSize: 20, fontWeight: FontWeight.bold))),
           appBarTheme: const AppBarTheme(
               toolbarTextStyle: TextStyle(
             fontSize: 20,

@@ -101,13 +101,17 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
                                 Theme.of(context).colorScheme.primary,
                             minimumSize: const Size(double.infinity, 50)),
                         onPressed: () {
-                          Provider.of<CartProvider>(context, listen: false)
-                              .addToCart({
-                            "title": widget.product['title'],
-                            "price": widget.product['price'],
-                            "size": widget.product['size'],
-                            "thumbnail": widget.product['thumbnail'],
-                          });
+                          print(selectedSize);
+                          selectedSize == 0
+                              ? " "
+                              : Provider.of<CartProvider>(context,
+                                      listen: false)
+                                  .addToCart({
+                                  "title": widget.product['title'],
+                                  "price": widget.product['price'],
+                                  "size": selectedSize,
+                                  "thumbnail": widget.product['thumbnail'],
+                                });
                         },
                         child: const Text(
                           'add to cart',

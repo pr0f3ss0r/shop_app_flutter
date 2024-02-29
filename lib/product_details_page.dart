@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:shop_app/products.dart';
+import 'package:provider/provider.dart';
+import 'package:shop_app/cart_provider.dart';
 
 class ProductDetailsPage extends StatefulWidget {
   final Map<String, Object> product;
@@ -99,7 +100,15 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
                             backgroundColor:
                                 Theme.of(context).colorScheme.primary,
                             minimumSize: const Size(double.infinity, 50)),
-                        onPressed: () {},
+                        onPressed: () {
+                          Provider.of<CartProvider>(context, listen: false)
+                              .addToCart({
+                            "title": widget.product['title'],
+                            "price": widget.product['price'],
+                            "size": widget.product['size'],
+                            "thumbnail": widget.product['thumbnail'],
+                          });
+                        },
                         child: const Text(
                           'add to cart',
                           style: TextStyle(fontSize: 25, color: Colors.white),

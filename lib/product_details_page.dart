@@ -1,8 +1,25 @@
 import 'package:flutter/material.dart';
+import 'package:shop_app/products.dart';
 
-class ProductDetailsPage extends StatelessWidget {
+class ProductDetailsPage extends StatefulWidget {
   final Map<String, Object> product;
-  const ProductDetailsPage({super.key, required this.product});
+  //final String selectedSize;
+  const ProductDetailsPage({
+    super.key,
+    required this.product,
+  });
+
+  @override
+  State<ProductDetailsPage> createState() => _ProductDetailsPageState();
+}
+
+class _ProductDetailsPageState extends State<ProductDetailsPage> {
+  int selectedSize = 0;
+
+  @override
+  void initState() {
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -13,11 +30,11 @@ class ProductDetailsPage extends StatelessWidget {
       body: Column(children: [
         Center(
           child: Text(
-            product['title'] as String,
+            widget.product['title'] as String,
             style: Theme.of(context).textTheme.displayLarge,
           ),
         ),
-        Image.network(product['thumbnail'] as String),
+        Image.network(widget.product['thumbnail'] as String),
         // const SizedBox(
         //   height: 10,
         // ),
@@ -36,11 +53,46 @@ class ProductDetailsPage extends StatelessWidget {
                 child: Column(
                   children: [
                     Text(
-                      '\$${product['price']}',
+                      '\$${widget.product['price']}',
                       style: Theme.of(context).textTheme.displayLarge,
                     ),
                     const SizedBox(
                       height: 20,
+                    ),
+                    SizedBox(
+                      height: 80,
+                      child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        padding: const EdgeInsets.symmetric(horizontal: 30),
+                        itemCount: (widget.product['size'] as List<int>).length,
+                        itemBuilder: (context, index) {
+                          final size =
+                              (widget.product['size'] as List<int>)[index];
+                          return Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: GestureDetector(
+                              onTap: () {
+                                setState(() {
+                                  selectedSize = size;
+                                });
+                              },
+                              child: Chip(
+                                  backgroundColor: selectedSize == size
+                                      ? Theme.of(context).colorScheme.primary
+                                      : null,
+                                  label: Text(
+                                    size.toString(),
+                                    style: TextStyle(
+                                      color: selectedSize == size
+                                          ? Colors.white
+                                          : null,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  )),
+                            ),
+                          );
+                        },
+                      ),
                     ),
                     ElevatedButton(
                         style: ElevatedButton.styleFrom(

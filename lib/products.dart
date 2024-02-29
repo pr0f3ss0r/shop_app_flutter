@@ -1,138 +1,83 @@
 final products = [
   {
     "id": 1,
-    "title": "iPhone 9",
+    "title": "Nike",
     "description": "An apple mobile which is nothing like apple",
     "price": 549.0,
-    "brand": "Apple",
-    "category": "smartphones",
-    "thumbnail":
-        "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/14/7403602/1.jpg?8042",
-    "images": [
-      "https://i.dummyjson.com/data/products/1/1.jpg",
-      "https://i.dummyjson.com/data/products/1/2.jpg",
-      "https://i.dummyjson.com/data/products/1/3.jpg",
-      "https://i.dummyjson.com/data/products/1/4.jpg",
-      "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
-    ]
+    "size": [42, 45, 47, 49],
+    "thumbnail": "https://i.ebayimg.com/images/g/3GQAAOSw8ttl3xWa/s-l1600.jpg",
   },
   {
     "id": 2,
-    "title": "iPhone X",
+    "title": "Prada",
     "description":
         "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
     "price": 899.0,
     "discountPercentage": 17.94,
     "rating": 4.44,
+    "size": [40, 452],
     "stock": 34,
-    "brand": "Apple",
-    "category": "smartphones",
-    "thumbnail":
-        "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/14/7403602/1.jpg?8042",
-    "images": [
-      "https://i.dummyjson.com/data/products/2/1.jpg",
-      "https://i.dummyjson.com/data/products/2/2.jpg",
-      "https://i.dummyjson.com/data/products/2/3.jpg",
-      "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
-    ]
+    "thumbnail": "https://i.ebayimg.com/images/g/oQYAAOSwouRjfh4Z/s-l1600.jpg",
   },
   {
     "id": 3,
-    "title": "Samsung Universe 9",
+    "title": "Adidas",
     "description":
         "Samsung's new variant which goes beyond Galaxy to the Universe",
     "price": 1249.0,
-    "brand": "Samsung",
-    "category": "smartphones",
-    "thumbnail":
-        "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/14/7403602/1.jpg?8042",
-    "images": ["https://i.dummyjson.com/data/products/3/1.jpg"]
+    "size": [42, 45, 47, 49],
+    "thumbnail": "https://i.ebayimg.com/images/g/hrAAAOSwU-FlfHR0/s-l1600.jpg",
   },
   {
     "id": 4,
-    "title": "OPPOF19",
+    "title": "Prada",
     "description": "OPPO F19 is officially announced on April 2021.",
     "price": 280.0,
-    "brand": "OPPO",
-    "category": "smartphones",
-    "thumbnail":
-        "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/14/7403602/1.jpg?8042",
-    "images": [
-      "https://i.dummyjson.com/data/products/4/1.jpg",
-      "https://i.dummyjson.com/data/products/4/2.jpg",
-      "https://i.dummyjson.com/data/products/4/3.jpg",
-      "https://i.dummyjson.com/data/products/4/4.jpg",
-      "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
-    ]
+    "size": [38, 40, 42],
+    "thumbnail": "https://i.ebayimg.com/images/g/HP4AAOSwQExj1v00/s-l1600.jpg",
   },
   {
     "id": 5,
-    "title": "Huawei P30",
+    "title": "Adidas",
     "description":
         "Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
     "price": 499.0,
-    "brand": "Huawei",
-    "category": "smartphones",
-    "thumbnail":
-        "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/14/7403602/1.jpg?8042",
-    "images": [
-      "https://i.dummyjson.com/data/products/5/1.jpg",
-      "https://i.dummyjson.com/data/products/5/2.jpg",
-      "https://i.dummyjson.com/data/products/5/3.jpg"
-    ]
+    "size": [42, 43, 45, 49],
+    "thumbnail": "https://i.ebayimg.com/images/g/Ft8AAOSwfY5lEvKV/s-l1600.jpg"
   },
   {
     "id": 6,
-    "title": "MacBook Pro",
+    "title": "Prada",
     "description":
         "MacBook Pro 2021 with mini-LED display may launch between September, November",
     "price": 1749.0,
-    "brand": "Apple",
-    "category": "laptops",
-    "thumbnail":
-        "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/14/7403602/1.jpg?8042",
-    "images": [
-      "https://i.dummyjson.com/data/products/6/1.png",
-      "https://i.dummyjson.com/data/products/6/2.jpg",
-      "https://i.dummyjson.com/data/products/6/3.png",
-      "https://i.dummyjson.com/data/products/6/4.jpg"
-    ]
+    "size": [
+      40,
+      38,
+    ],
+    "thumbnail": "https://i.ebayimg.com/images/g/VQcAAOSwL9tlUTFF/s-l1600.jpg",
   },
   {
     "id": 7,
-    "title": "Samsung Galaxy Book",
+    "title": "Nike",
     "description":
         "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
     "price": 1499.0,
-    "brand": "Samsung",
-    "category": "laptops",
-    "thumbnail":
-        "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/14/7403602/1.jpg?8042",
-    "images": [
-      "https://i.dummyjson.com/data/products/7/1.jpg",
-      "https://i.dummyjson.com/data/products/7/2.jpg",
-      "https://i.dummyjson.com/data/products/7/3.jpg",
-      "https://i.dummyjson.com/data/products/7/thumbnail.jpg"
-    ]
+    "size": [42, 45, 49],
+    "thumbnail": "https://i.ebayimg.com/images/g/7rIAAOSwxzllRz8E/s-l1600.jpg",
   },
-  {
-    "id": 8,
-    "title": "Microsoft Surface Laptop 4",
-    "description":
-        "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",
-    "price": 1499.0,
-    "brand": "Microsoft Surface",
-    "category": "laptops",
-    "thumbnail":
-        "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/14/7403602/1.jpg?8042",
-    "images": [
-      "https://i.dummyjson.com/data/products/8/1.jpg",
-      "https://i.dummyjson.com/data/products/8/2.jpg",
-      "https://i.dummyjson.com/data/products/8/3.jpg",
-      "https://i.dummyjson.com/data/products/8/4.jpg",
-      "https://i.dummyjson.com/data/products/8/thumbnail.jpg"
-    ]
-  },
+  // {
+  //   "id": 8,
+  //   "title": "Microsoft Surface Laptop 4",
+  //   "description":
+  //       "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",
+  //   "price": 1499.0,
+  //   "brand": "Microsoft Surface",
+  //   "category": "laptops",
+  //   "thumbnail":
+  //       "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/14/7403602/1.jpg?8042",
+  //   "images": []
+  // },
   // {
   //   "id": 9,
   //   "title": "Infinix INBOOK",
@@ -549,19 +494,11 @@ final products = [
 final cart = [
   {
     "id": 8,
-    "title": "Microsoft Surface Laptop 4",
+    "title": "Nike",
     "description":
         "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",
     "price": 1499.0,
-    "brand": "Microsoft Surface",
-    "category": "laptops",
-    "thumbnail": "https://i.dummyjson.com/data/products/8/thumbnail.jpg",
-    "images": [
-      "https://i.dummyjson.com/data/products/8/1.jpg",
-      "https://i.dummyjson.com/data/products/8/2.jpg",
-      "https://i.dummyjson.com/data/products/8/3.jpg",
-      "https://i.dummyjson.com/data/products/8/4.jpg",
-      "https://i.dummyjson.com/data/products/8/thumbnail.jpg"
-    ]
+    "size": 44,
+    "thumbnail": "https://i.ebayimg.com/images/g/oQYAAOSwouRjfh4Z/s-l1600.jpg",
   }
 ];

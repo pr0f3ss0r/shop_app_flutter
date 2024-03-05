@@ -101,17 +101,27 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
                                 Theme.of(context).colorScheme.primary,
                             minimumSize: const Size(double.infinity, 50)),
                         onPressed: () {
-                          print(selectedSize);
-                          selectedSize == 0
-                              ? " "
-                              : Provider.of<CartProvider>(context,
-                                      listen: false)
-                                  .addToCart({
-                                  "title": widget.product['title'],
-                                  "price": widget.product['price'],
-                                  "size": selectedSize,
-                                  "thumbnail": widget.product['thumbnail'],
-                                });
+                          //print(selectedSize);
+                          if (selectedSize == 0) {
+                            ScaffoldMessenger.of(context)
+                                .showSnackBar(const SnackBar(
+                              content: Text('Please choose a size'),
+                              duration: Duration(seconds: 2),
+                            ));
+                          } else {
+                            Provider.of<CartProvider>(context, listen: false)
+                                .addToCart({
+                              "title": widget.product['title'],
+                              "price": widget.product['price'],
+                              "size": selectedSize,
+                              "thumbnail": widget.product['thumbnail'],
+                            });
+                            ScaffoldMessenger.of(context)
+                                .showSnackBar(const SnackBar(
+                              content: Text('Successfully added to cart'),
+                              duration: Duration(seconds: 2),
+                            ));
+                          }
                         },
                         child: const Text(
                           'add to cart',
@@ -125,3 +135,15 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
     );
   }
 }
+
+//  promptMessage(String message){
+//   ScaffoldMessenger.maybeOf() showSnackBar(const SnackBar(
+//                                   content: Text(message),
+//                                   duration: Duration(seconds: 2),
+//                                 ));
+// }
+// GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
+
+// Widget build(BuildContext context) {
+//    return Scaffold(key: _scaffoldKey);
+// }
